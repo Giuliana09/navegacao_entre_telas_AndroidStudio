@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93DF97"
+    tools:context=".Tela02"
+    android:id="@+id/backgroundT2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tela 2"
+        android:textColor="#1C1C1B"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btVermelho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="mudarCor"
+        android:text="Vemelho"
+        app:layout_constraintBottom_toTopOf="@+id/btVerde"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="mudarCor"
+        android:text="Verde"
+        app:layout_constraintBottom_toTopOf="@+id/btAzul"
+        app:layout_constraintStart_toStartOf="@+id/btAzul" />
+
+    <Button
+        android:id="@+id/btAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="mudarCor"
+        android:text="Azul"
+        app:layout_constraintBottom_toTopOf="@+id/btAleatorio"
+        app:layout_constraintStart_toStartOf="@+id/btAleatorio" />
+
+    <Button
+        android:id="@+id/btAleatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="244dp"
+        android:onClick="mudarAleatorio"
+        android:text="Aleatoriamente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btVoltaTL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="voltarTL1"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btavancarTL3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAleatorio" />
+
+    <Button
+        android:id="@+id/btavancarTL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:onClick="avancarTL3"
+        android:text="avançar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btVoltaTL1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltaTL1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

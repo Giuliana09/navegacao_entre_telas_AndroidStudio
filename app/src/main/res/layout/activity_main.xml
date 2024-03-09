@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCA684"
+    tools:context=".MainActivity"
+    android:id="@+id/backgroundT1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="495dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tela_1"
+        android:textColor="#1C1C1B"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btavancarTL2"
+        app:layout_constraintEnd_toEndOf="@+id/btVermelho"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btavancarTL2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FF6750A3"
+        android:onClick="avancarTL2"
+        android:text="Proximo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltaNulo"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btVoltaNulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="59dp"
+        android:backgroundTint="#FF6750A3"
+        android:text="Voltar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btavancarTL2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAleatorio" />
+
+    <Button
+        android:id="@+id/btVermelho"
+        android:layout_width="210dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#BF0F0F"
+        android:onClick="mudarCor"
+        android:text="Vermelho"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btVerde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btAleatorio"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#805336"
+        android:onClick="mudarAleatorio"
+        android:text="Aleatorio"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btVoltaNulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAzul" />
+
+    <Button
+        android:id="@+id/btVerde"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#579312"
+        android:onClick="mudarCor"
+        android:text="Verde"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btAzul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btVermelho" />
+
+    <Button
+        android:id="@+id/btAzul"
+        android:layout_width="203dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#0A3793"
+        android:onClick="mudarCor"
+        android:text="Azul"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btAleatorio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btVerde" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
